@@ -17,6 +17,18 @@
 
 }
 
+.socailmediabtn {
+    width: 90px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
 
 .homepagebackground {
     width: 100%;

@@ -56,18 +56,20 @@ const apps = [
         name: 'XKal Fitness',
         description: 'Xkal fitness web site, landing page, institutional page, payment platform, registration, login and account user',
         date: "3/2022",
-        techonology: "This app is development using Javascript as lenguage and using React JS and Next Js to create frontend. Platform Page using stripe and conecting with firabase",
+        funcionality: "This app is development using Javascript as lenguage and using React JS and Next Js to create frontend. Platform Page using stripe and conecting with firabase",
         link: 'https://xkalfitness-dev.firebaseapp.com/',
+        technology: ["Node Js", "React Js", "Next Js", "Stripe", "Firabase", "MUI"]
 
     },
     {
         name: 'Seoma',
         description: 'Seoma is a e-commerce of electronics products such as computers, laptops and monitors also you can buy and pre-desing your own apps mobile or web site and send some query to seoma admin',
         date: "4/2022",
-        techonology: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.Seoma has account",
+        funcionality: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.Seoma has account",
         //  admin",
         //  and account user where both can manage inquiries",
         link: 'https://elenaperd24.github.io/seoma/',
+        technology: ["Node Js", "React Js", "MUI", "Mongodb"]
 
     },
 
@@ -75,8 +77,11 @@ const apps = [
         name: 'My Tinerary',
         description: 'My tineray is a intineraries app where you can find many place around the world where you can go, you can check price, time and to see opinion from others people',
         date: "10/2021",
-        techonology: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.",
+        funcionality: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.",
         link: 'https://elenaperd24.github.io/_mytineraryfrontend/',
+        technology: [
+            "Node Js", "React Js", "MUI", "Mongodb"
+        ]
 
     },
 
@@ -84,18 +89,49 @@ const apps = [
         name: 'Bruce Petshop',
         description: '',
         date: "5/2021",
-        techonology: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.",
+        funcionality: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.",
         link: 'https://marianteran.github.io/petshop/',
+        technology: ["Html"]
 
     },
 
 ]
 
-const skills = [
-    {
-        name: "Web Application Development",
 
-    }
+
+const skills = [
+
+    {
+        name: "Node Js"
+    },
+    {
+        name: "React Js"
+    },
+    {
+        name: "Next Js"
+    },
+    {
+        name: "MUI"
+    },
+
+    {
+        name: "Stripe"
+    },
+    {
+        name: "Sql"
+    },
+    {
+
+        name: "Firabase"
+    },
+    {
+        name: "Websocket"
+    },
+    {
+        name: "Html",
+
+    },
+
 ]
 
 const drawerWidth = 240;
@@ -147,7 +183,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 
 function DashboardContent() {
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const toggleDrawer = () => {
         setOpen(!open);
     };
@@ -204,7 +240,7 @@ function DashboardContent() {
                         }}
                     >
                         <IconButton onClick={toggleDrawer}>
-                            <ChevronLeftIcon color="inherit"/>
+                            <ChevronLeftIcon color="inherit" />
                         </IconButton>
                     </Toolbar>
                     <Divider />
@@ -212,13 +248,13 @@ function DashboardContent() {
 
                         <Divider sx={{ my: 1, }} />
                         <React.Fragment>
-                            <ListItemButton>
+                            {/*  <ListItemButton>
                                 <ListItemIcon>
                                     <AccountCircleIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="About Me" />
-                            </ListItemButton>
-                            <ListItemButton>
+                            </ListItemButton> */}
+                            <ListItemButton target={"blank"} href='https://drive.google.com/file/d/1K-pa0XZn1JJL6-WHsMZYAEfka_Dn3hyb/view?usp=sharing'>
                                 <ListItemIcon>
                                     <HistoryEduIcon />
                                 </ListItemIcon>
@@ -235,7 +271,7 @@ function DashboardContent() {
                                 <ListItemIcon>
                                     <SchoolIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Skills" />
+                                <ListItemText primary="Academics" />
                             </ListItemButton>
 
 
@@ -356,8 +392,15 @@ function DashboardContent() {
                         <Grid container spacing={2}>
 
                             {/* SKILLS */}
-                            <Grid item lg={3} sx={{ backgroundColor: "white", display:"flex", justifyContent:"center" }}>
-                                        <Skills/>
+                            <Grid item lg={3} sx={{ backgroundColor: "white", display: "flex", justifyContent: "", flexDirection: "column" }}>
+                                {
+                                    skills.map(skill => {
+                                        return (
+                                            <Skills skill={skill} />
+                                        )
+                                    })
+                                }
+
                             </Grid>
 
                             {/* MY PROJECTS*/}
@@ -365,7 +408,7 @@ function DashboardContent() {
                                 <Grid container spacing={1}>
                                     {apps.map(item => {
                                         return (
-                                            <Grid  item lg={6} style={{ }}>
+                                            <Grid item lg={6} style={{}}>
                                                 <Projects app={item} />
                                             </Grid>
                                         )
@@ -380,6 +423,21 @@ function DashboardContent() {
 
                         </Grid>
 
+                    </Container>
+
+
+                    {/* Contct me */}
+
+                    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+                        <Grid Container spacing={2}  sx={{backgroundColor:"#ffceda",height: 240,}}>
+                            <Grid item lg={12}>
+                              
+                                    
+                                
+                            </Grid>
+
+                            
+                        </Grid>
                     </Container>
 
 

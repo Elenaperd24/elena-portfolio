@@ -7,15 +7,16 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
-export default function Skills() {
+export default function Skills(props) {
+    let skill  = props.skill
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper',paddingRight:2 }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={process.env.PUBLIC_URL + `/images/${skill.name}.png`} />
         </ListItemAvatar>
         <ListItemText
-          primary="Brunch this weekend?"
+          primary={skill.name}
           secondary={
             <React.Fragment>
               <Typography
@@ -24,9 +25,9 @@ export default function Skills() {
                 variant="body2"
                 color="text.primary"
               >
-                Ali Connors
+                {/* Ali Connors */}
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+             {/*  {" — I'll be in your neighborhood doing errands this…"} */}
             </React.Fragment>
           }
         />
