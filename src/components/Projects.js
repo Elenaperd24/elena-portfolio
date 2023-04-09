@@ -61,7 +61,7 @@ export default function Projects(props) {
                         <CardMedia
                             component="img"
                             backgroundSize='cover'
-                            /* height="190" */
+                            height="190"
                             image={process.env.PUBLIC_URL + `/images/${app.name}.jpg`}
                             alt={app.name}
                         /> 

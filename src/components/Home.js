@@ -48,6 +48,7 @@ import MyTinerary from '../assets/myTinerary.jpg'
 import Seoma from '../assets/seoma.jpg'
 import { ListItemIcon, ListItemText } from '@mui/material';
 import { display } from '@mui/system';
+import Skills from './Skills';
 
 const apps = [
 
@@ -80,11 +81,11 @@ const apps = [
     },
 
     {
-        name: 'Pet Shop',
+        name: 'Bruce Petshop',
         description: '',
-        date: "10/2021",
+        date: "5/2021",
         techonology: "This app is development using Javascript as lenguage and using React JS to create frontend and Node js and Express Js to sever develoment.",
-        link: 'https://elenaperd24.github.io/_mytineraryfrontend/',
+        link: 'https://marianteran.github.io/petshop/',
 
     },
 
@@ -203,7 +204,7 @@ function DashboardContent() {
                         }}
                     >
                         <IconButton onClick={toggleDrawer}>
-                            <ChevronLeftIcon />
+                            <ChevronLeftIcon color="inherit"/>
                         </IconButton>
                     </Toolbar>
                     <Divider />
@@ -256,6 +257,8 @@ function DashboardContent() {
                     }}
                 >
                     <Toolbar />
+
+                    {/* HEADER */}
                     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
 
                         <Grid container spacing={2}>
@@ -350,22 +353,16 @@ function DashboardContent() {
 
 
                     <Container maxWidth="lg" sx={{ mt: 2, mb: 4 }}>
-
-
-
                         <Grid container spacing={2}>
-                            <Grid item lg={3} sx={{ backgroundColor: "white", display: "flex", justifyContent: "center", flexDirection: "column" }}>
 
-                                <div sx={{ backgroundColor: "red" }}>
-
-                                </div>
+                            {/* SKILLS */}
+                            <Grid item lg={3} sx={{ backgroundColor: "white", display:"flex", justifyContent:"center" }}>
+                                        <Skills/>
                             </Grid>
 
-                            {/* What I do */}
-
+                            {/* MY PROJECTS*/}
                             <Grid item xs={8} md={8} lg={9} /* sx={{ display: "flex", justifyContent: "center" }} */>
                                 <Grid container spacing={1}>
-
                                     {apps.map(item => {
                                         return (
                                             <Grid  item lg={6} style={{ }}>
