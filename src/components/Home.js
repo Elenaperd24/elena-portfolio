@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
@@ -46,9 +46,11 @@ import Projects from './Projects';
 //IMG
 import MyTinerary from '../assets/myTinerary.jpg'
 import Seoma from '../assets/seoma.jpg'
-import { ListItemIcon, ListItemText } from '@mui/material';
+import { Avatar, ListItemIcon, ListItemText } from '@mui/material';
 import { display } from '@mui/system';
 import Skills from './Skills';
+import DownloadIcon from '@mui/icons-material/Download';
+import CallIcon from '@mui/icons-material/Call';
 
 const apps = [
 
@@ -183,10 +185,30 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 
 function DashboardContent() {
+
+
+
     const [open, setOpen] = React.useState(false);
     const toggleDrawer = () => {
         setOpen(!open);
     };
+
+
+
+    useEffect(() => {
+
+
+
+    }, []);
+
+
+    const addAddResizeEvent = (event) => {
+        if (event.target.outerWidt > 700) {
+            setOpen(true)
+        } else {
+            setOpen(false)
+        }
+    }
 
     return (
         <ThemeProvider theme={mdTheme}>
@@ -248,30 +270,30 @@ function DashboardContent() {
 
                         <Divider sx={{ my: 1, }} />
                         <React.Fragment>
-                            {/*  <ListItemButton>
+                            <ListItemButton href="mailto: elena24.perdomo@gmail.com">
                                 <ListItemIcon>
-                                    <AccountCircleIcon />
+                                    <EmailIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="About Me" />
-                            </ListItemButton> */}
+                                <ListItemText primary="Email" />
+                            </ListItemButton>
                             <ListItemButton target={"blank"} href='https://drive.google.com/file/d/1K-pa0XZn1JJL6-WHsMZYAEfka_Dn3hyb/view?usp=sharing'>
                                 <ListItemIcon>
-                                    <HistoryEduIcon />
+                                    <DownloadIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="Resume CV" />
                             </ListItemButton>
-                            <ListItemButton>
+                            <ListItemButton target={"blank"} href='https://api.whatsapp.com/send?phone=61468700564'>
                                 <ListItemIcon>
                                     <WhatsAppIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Contact me" />
+                                <ListItemText primary="Whatsapp" />
                             </ListItemButton>
 
                             <ListItemButton>
                                 <ListItemIcon>
-                                    <SchoolIcon />
+                                    <CallIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Academics" />
+                                <ListItemText primary="Contact me" />
                             </ListItemButton>
 
 
@@ -299,28 +321,26 @@ function DashboardContent() {
 
                         <Grid container spacing={2}>
 
-                            <Grid sx={{ backgroundColor: "white" }} item xs={4} md={4} lg={3}>
+                            <Grid item xs={12} md={4} lg={3}
+                                sx={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    flexDirection: "column",
+                                    backgroundColor: "white",
+                                    height: 350,
+                                    mt: 2
+                                }} >
 
                                 {/* IMG PROFILE */}
-                                <Paper className='imgProfile'
 
-                                    sx={{
-                                        /* p: 2, */
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        height: 240,
-                                        borderRadius: "100px",
+                                <Avatar sx={{ width: 200, height: 200 }} alt="avatar" src={process.env.PUBLIC_URL + `/images/myAvatar.png`} />
 
-                                    }}
-                                >
-
-                                </Paper>
 
                                 {/* NAME PROFILE */}
-                                <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }} >
+                                <Grid item sx={{ display: "flex", justifyContent: "center" }} >
                                     <div >
                                         <h3 >Elena Perdomo <span className='wave'> 🌼</span></h3>
-                                        <p>full stack web developer</p>
+                                       {/*  <p>full stack web developer</p> */}
                                     </div>
                                     {/*  <Orders /> */}
                                 </Grid>
@@ -328,18 +348,19 @@ function DashboardContent() {
                             </Grid>
 
                             {/* BANNER */}
-                            <Grid item xs={8} md={8} lg={9} sx={{ textAlign: "right" }}>
+                            <Grid item xs={12} md={8} lg={9} sx={{ textAlign: "right" }}>
 
-                                <Paper className='homepagebackground'
+                                <Grid className='homepagebackground'
                                     sx={{
                                         p: 2,
                                         display: 'flex',
                                         flexDirection: "row",
                                         height: 240,
-                                        justifyContent: "end"
+                                        justifyContent: "end",
+                                        alignItems: "end"
                                     }}
                                 >
-                                    <div sx={{}} md={9}>
+                                    <div sx={{}} >
 
                                         <button onClick={() => {
                                             window.open("https://github.com/Elenaperd24");
@@ -361,23 +382,27 @@ function DashboardContent() {
 
 
 
-                                </Paper>
+                                </Grid>
 
-                                <Paper
-                                    sx={{ mt: 1, p: 2, textAlign: "left" }}
-                                >
 
-                                    <Typography variant="body1" >
-                                        I’m a software developer with a passion for new
-                                        technologies. I have experience as a full stack
-                                        developer using JavaScript as a programming
-                                        language, and React as library for frontend, as
-                                        well the runtime environment Node.js for
-                                        server design.
-                                    </Typography>
+                                <Grid item xs={12} md={12}>
 
-                                </Paper>
 
+                                    <Paper
+                                        sx={{ mt: 1, p: 2, textAlign: "left" }}
+                                    >
+
+                                        <Typography variant="body1" >
+                                            I’m a software developer with a passion for new
+                                            technologies. I have experience as a full stack
+                                            developer using JavaScript as a programming
+                                            language, and React as library for frontend, as
+                                            well the runtime environment Node.js for
+                                            server design.
+                                        </Typography>
+
+                                    </Paper>
+                                </Grid>
 
 
 
@@ -388,11 +413,15 @@ function DashboardContent() {
                     </Container>
 
 
-                    <Container maxWidth="lg" sx={{ mt: 2, mb: 4 }}>
+                    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
                         <Grid container spacing={2}>
 
                             {/* SKILLS */}
-                            <Grid item lg={3} sx={{ backgroundColor: "white", display: "flex", justifyContent: "", flexDirection: "column" }}>
+                           
+                            <Grid item xs={12} md={4} lg={3} sx={{ backgroundColor: "white", display: "flex", justifyContent: "", flexDirection: "column" }}>
+                            <Typography  sx={{display:"flex", justifyContent:"center"}} variant="h6" gutterBottom >
+                                Technologies
+                            </Typography>
                                 {
                                     skills.map(skill => {
                                         return (
@@ -404,11 +433,14 @@ function DashboardContent() {
                             </Grid>
 
                             {/* MY PROJECTS*/}
-                            <Grid item xs={8} md={8} lg={9} /* sx={{ display: "flex", justifyContent: "center" }} */>
+                            <Grid item xs={12} md={8} lg={9} /* sx={{ display: "flex", justifyContent: "center" }} */>
+                            <Typography  variant="h6" gutterBottom sx={{display:"flex", justifyContent:"center"}}>
+                                My Projects
+                            </Typography>
                                 <Grid container spacing={1}>
                                     {apps.map(item => {
                                         return (
-                                            <Grid item lg={6} style={{}}>
+                                            <Grid item xs={12} md={6} lg={6} >
                                                 <Projects app={item} />
                                             </Grid>
                                         )
@@ -426,17 +458,17 @@ function DashboardContent() {
                     </Container>
 
 
-                    {/* Contct me */}
+                    {/* Contact me */}
 
                     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-                        <Grid Container spacing={2}  sx={{backgroundColor:"#ffceda",height: 240,}}>
+                        <Grid Container spacing={2} sx={{ backgroundColor: "#ffceda", height: 240, }}>
                             <Grid item lg={12}>
-                              
-                                    
-                                
+
+
+
                             </Grid>
 
-                            
+
                         </Grid>
                     </Container>
 

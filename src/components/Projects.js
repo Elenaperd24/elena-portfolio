@@ -77,7 +77,7 @@ export default function Projects(props) {
                 {app.technology.map(tech=>{
                         return(
                             <IconButton aria-label="add to favorites">
-                            <Avatar alt="Remy Sharp" sx={{ width:30, height:30, backgroundSize:"cover"}} src={process.env.PUBLIC_URL + `/images/${tech}.png`} />
+                            <Avatar alt={tech} sx={{ width:30, height:30, width:"100%", backgroundSize:"cover"}} src={process.env.PUBLIC_URL + `/images/${tech}.png`} />
                        </IconButton>
                         )
                     })}

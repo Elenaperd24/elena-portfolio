@@ -12,10 +12,12 @@ export default function Skills(props) {
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper',paddingRight:2 }}>
       <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src={process.env.PUBLIC_URL + `/images/${skill.name}.png`} />
+
+        <ListItemAvatar sx={ {width:30, height:30, backgroundSize:"cover"}}>
+          <Avatar alt={skill.name}  src={process.env.PUBLIC_URL + `/images/${skill.name}.png`} />
         </ListItemAvatar>
-        <ListItemText
+
+        <ListItemText 
           primary={skill.name}
           secondary={
             <React.Fragment>

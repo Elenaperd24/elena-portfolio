@@ -13,28 +13,28 @@
     background-image: url('../../public/images/myAvatar.png');
     background-size: cover;
     background-color: #c850c0;
-    
+
 
 }
 
 .socailmediabtn {
-    width: 90px;
-    height: 45px;
-    background-color: transparent;
+    width: 65px;
+/*     height: 35px;
+ */    background-color: transparent;
     border: none;
     border-radius: 15px;
-  }
+}
 
-  .icon {
+.icon {
     font-size: 25px;
-  }
+}
 
 
 .homepagebackground {
     width: 100%;
-     background-image: url('../../public/images/banner.jpg');
-    background-size: 100% 
- /*    background-color: white;
+    background-image: url('../../public/images/banner.jpg');
+    background-size: cover;
+    /*    background-color: white;
     background-image: linear-gradient(43deg,
             #0000 0%,
             #c850c0 46%,
