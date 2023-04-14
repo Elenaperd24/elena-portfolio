@@ -340,7 +340,7 @@ function DashboardContent() {
                                 <Grid item sx={{ display: "flex", justifyContent: "center" }} >
                                     <div >
                                         <h3 >Elena Perdomo <span className='wave'> 🌼</span></h3>
-                                       {/*  <p>full stack web developer</p> */}
+                                        {/*  <p>full stack web developer</p> */}
                                     </div>
                                     {/*  <Orders /> */}
                                 </Grid>
@@ -417,11 +417,11 @@ function DashboardContent() {
                         <Grid container spacing={2}>
 
                             {/* SKILLS */}
-                           
+
                             <Grid item xs={12} md={4} lg={3} sx={{ backgroundColor: "white", display: "flex", justifyContent: "", flexDirection: "column" }}>
-                            <Typography  sx={{display:"flex", justifyContent:"center"}} variant="h6" gutterBottom >
-                                Technologies
-                            </Typography>
+                                <Typography sx={{ display: "flex", justifyContent: "center" }} variant="h6" gutterBottom >
+                                    Technologies
+                                </Typography>
                                 {
                                     skills.map(skill => {
                                         return (
@@ -434,9 +434,9 @@ function DashboardContent() {
 
                             {/* MY PROJECTS*/}
                             <Grid item xs={12} md={8} lg={9} /* sx={{ display: "flex", justifyContent: "center" }} */>
-                            <Typography  variant="h6" gutterBottom sx={{display:"flex", justifyContent:"center"}}>
-                                My Projects
-                            </Typography>
+                                <Typography variant="h6" gutterBottom sx={{ display: "flex", justifyContent: "center" }}>
+                                    My Projects
+                                </Typography>
                                 <Grid container spacing={1}>
                                     {apps.map(item => {
                                         return (
@@ -461,8 +461,14 @@ function DashboardContent() {
                     {/* Contact me */}
 
                     <Container id="contactMe" maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-                        <Grid Container spacing={2} sx={{ backgroundColor: "#ffceda", height: 240, }}>
-                            <Grid item lg={12}>
+                        <Grid Container spacing={2} sx={{ backgroundColor: "#ffceda", height: 2000, }}>
+                            <Grid className='cv' item xs={12} md={12} lg={12}
+                                sx={{
+                                    p: 2,
+                                    display: 'flex',
+                                    flexDirection: "row",
+                                    height:2000,
+                                }}>
 
 
 
