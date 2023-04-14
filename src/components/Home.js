@@ -289,7 +289,7 @@ function DashboardContent() {
                                 <ListItemText primary="Whatsapp" />
                             </ListItemButton>
 
-                            <ListItemButton>
+                            <ListItemButton href="#contactMe">
                                 <ListItemIcon>
                                     <CallIcon />
                                 </ListItemIcon>
@@ -460,7 +460,7 @@ function DashboardContent() {
 
                     {/* Contact me */}
 
-                    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+                    <Container id="contactMe" maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
                         <Grid Container spacing={2} sx={{ backgroundColor: "#ffceda", height: 240, }}>
                             <Grid item lg={12}>
 
