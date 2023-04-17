@@ -461,7 +461,7 @@ function DashboardContent() {
                     {/* Contact me */}
 
                     <Container id="contactMe" maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-                        <Grid Container spacing={2} sx={{ backgroundColor: "#ffceda", height: 2000, }}>
+                        <Grid Container spacing={2} sx={{ height: 2000, }}>
                             <Grid className='cv' item xs={12} md={12} lg={12}
                                 sx={{
                                     p: 2,

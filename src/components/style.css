@@ -92,6 +92,7 @@
 .cv{
     width: 100%;
     background-image: url('../../public/images/CV.svg');
-    background-size: cover;
-    height: 1000;
+    background-size: contain;
+    height: 2000;
+    background-repeat: no-repeat;
 }
