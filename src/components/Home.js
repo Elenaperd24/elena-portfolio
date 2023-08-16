@@ -276,13 +276,13 @@ function DashboardContent() {
                                 </ListItemIcon>
                                 <ListItemText primary="Email" />
                             </ListItemButton>
-                            <ListItemButton target={"blank"} href='https://drive.google.com/file/d/1K-pa0XZn1JJL6-WHsMZYAEfka_Dn3hyb/view?usp=sharing'>
+                            <ListItemButton target={"blank"} href='https://drive.google.com/file/d/1ECPu40sI14x6PYnvv-Lz79pX6Dfa18SC/view?usp=drive_link'>
                                 <ListItemIcon>
                                     <DownloadIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="Resume CV" />
                             </ListItemButton>
-                            <ListItemButton target={"blank"} href='https://api.whatsapp.com/send?phone=61468700564'>
+                            <ListItemButton target={"blank"} href='https://api.whatsapp.com/send?phone=541127147077'>
                                 <ListItemIcon>
                                     <WhatsAppIcon />
                                 </ListItemIcon>
