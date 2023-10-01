@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+## Site Name
+- Portable Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Header
+- Hi, my name is Elena. 
+- I'm a web developer.
+- full stack web developer
 
-## Available Scripts
+## About
+I have passion for new technologies. I have experience as a full stack developer using javaScript as a programming language, and React as library for frontend, as well the runtime environment Node.js for server design.
 
-In the project directory, you can run:
+## Contact
+Write your "Contact" section here.
+- LinkedIn: https://www.linkedin.com/in/elena-perdomo-960469127/
+- GitHub: https://github.com/Elenaperd24
+- Email: elena.perdomo@gmail.com
 
-### `npm start`
+## Logo
+- EP
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Company 1
+- *Full Stack Developer* | Jan'23 - Currently
+- ![logo512](../assets/logo-unopack.svg)
+- Tags: 1
+- Badges:
+  - Freelance [green]
+- List Items:
+  - Desktop application development using javascript and Next js/ React js as library
+  - Backend design using Node js/Typescript and Mongo DB for data storage.
+  - Institutional company page design using React js
+  - Maintenance and update of desktop application, users data management,
+shopping list and collection management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Company 2
+- *Frontend Developer* | Feb'23 - sep'23
+- ![logo512](../assets/xkal.svg)
+- Tags: 2
+- Badges:
+  - contract [pink]
+- List Items:
+  - Design and development users registration page using Next.js / React.js and
+  - Design and development payment page using React.js and framework MUI.
+  - Management and connection to new users with firabase throuth consulting API.
+  - Management and configuration to Stripe Element to register new user payment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Company 3
+- *Full Stack Developer* | Jun'22 - Oct'22
+- ![logo512](../assets/logo512.png)
+- Tags: 3
+- Badges:
+  - Freelance [green]
+- List Items:
+  - Full stack applications design using Next Js and Node Js and Typescript
+  - Sign In and Sign Up pages, user management applications, users database management. 
+  - Ecommerce websites, loading management products, products sales, shopping cart, payment platform and customer questions to administrator
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
