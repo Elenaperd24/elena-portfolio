@@ -462,7 +462,7 @@ function DashboardContent() {
 
                     <Container id="contactMe" maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
                         <Grid Container spacing={2} sx={{ height: 2000, }}>
-                            <Grid className='cv' item xs={12} md={12} lg={12}
+                            {/* <Grid className='cv' item xs={12} md={12} lg={12}
                                 sx={{
                                     p: 2,
                                     display: 'flex',
@@ -472,7 +472,11 @@ function DashboardContent() {
 
 
 
-                            </Grid>
+                            </Grid> */}
+
+<a width={100}
+  src="https://drive.google.com/file/d/1ECPu40sI14x6PYnvv-Lz79pX6Dfa18SC/view?usp=drive_link">
+</a>
 
 
                         </Grid>
