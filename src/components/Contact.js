@@ -59,6 +59,7 @@ export default function Contact({ color }) {
         </Stack>
       </Container>
     </>
+    
   );
 }
 
