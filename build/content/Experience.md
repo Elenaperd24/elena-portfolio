@@ -5,7 +5,7 @@
 - Badges:
   - Freelance [green]
 - List Items:
-  - Desktop application development using javascript and Next js/ React js as library
+  - Desktop application development using javascript and Next js as library
   - Backend design using Node js/Typescript and Mongo DB for data storage.
   - Institutional company page design using React js
   - Maintenance and update of desktop application, users data management,
@@ -19,7 +19,7 @@ shopping list and collection management.
 - Badges:
   - contract [pink]
 - List Items:
-  - Design and development users registration page using Next.js / React.js and
+  - Design and development users registration page using Next.js
   - Design and development payment page using React.js and framework MUI.
   - Management and connection to new users with firabase throuth consulting API.
   - Management and configuration to Stripe Element to register new user payment

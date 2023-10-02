@@ -1,9 +1,9 @@
 ## XKal Fitness
-This app is development using Javascript as language and using React JS and Next Js to create frontend. Platform Page using stripe and conecting with firabase
+This app is development using Javascript as language and using Next Js to create frontend. Platform Page using stripe and conecting with firabase
 - ![600x200](assets/XKal%20Fitness.jpg)
 - Tags: Category 2
 - Badges:
-  - React [blue]
+  - Next js [blue]
   - Node [green]
   - Stripe [yellow]
   - Firabase [yellow]
@@ -18,7 +18,7 @@ This app is development using Javascript as language and using React JS to creat
 - Badges:
   - React [blue]
   - Node [green]
-  - Boostrap [black]
+  - Bootstrap [black]
   - Mongo DB [yellow]
   - MUI [blue]
 - Buttons:
