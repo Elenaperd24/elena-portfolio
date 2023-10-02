@@ -22,7 +22,7 @@ This app is development using Javascript as language and using React JS to creat
   - Mongo DB [yellow]
   - MUI [blue]
 - Buttons:
-  - GO  [https://example.com]
+  - GO  [https://elenaperd24.github.io/seoma/]
 
 ## UNOPACK
 Development of desktop page from the migration from agular to react
