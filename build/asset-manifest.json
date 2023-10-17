@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/elena-perd/static/css/main.6e04e248.css",
-    "main.js": "/elena-perd/static/js/main.99daecbc.js",
-    "static/js/787.1ed0c42c.chunk.js": "/elena-perd/static/js/787.1ed0c42c.chunk.js",
-    "index.html": "/elena-perd/index.html",
-    "main.6e04e248.css.map": "/elena-perd/static/css/main.6e04e248.css.map",
-    "main.99daecbc.js.map": "/elena-perd/static/js/main.99daecbc.js.map",
-    "787.1ed0c42c.chunk.js.map": "/elena-perd/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/elena-portfolio/static/css/main.6e04e248.css",
+    "main.js": "/elena-portfolio/static/js/main.ce114dda.js",
+    "static/js/787.1ed0c42c.chunk.js": "/elena-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/elena-portfolio/index.html",
+    "main.6e04e248.css.map": "/elena-portfolio/static/css/main.6e04e248.css.map",
+    "main.ce114dda.js.map": "/elena-portfolio/static/js/main.ce114dda.js.map",
+    "787.1ed0c42c.chunk.js.map": "/elena-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e04e248.css",
-    "static/js/main.99daecbc.js"
+    "static/js/main.ce114dda.js"
   ]
 }
