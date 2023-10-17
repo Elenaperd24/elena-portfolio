@@ -8,7 +8,7 @@ const parseExperience = (mdContent) => {
     const line = lines[i];
 
     if (line.startsWith("## ")) {
-      const company = line.substr(3).trim();
+      const company = line.substr(3).trim(); 
       const positionLine = lines[++i]
         .substr(2)
         .split("|")
