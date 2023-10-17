@@ -21,4 +21,4 @@ This app is development using Javascript as language, using React JS to create f
   - Mongo DB [yellow]
   - MUI [blue]
 - Buttons:
-  - GO [https://elenaperd24.github.io/_mytineraryfrontend/]
+  - GO [https://elenaperd24.github.io/mytineraryfrontend/]
